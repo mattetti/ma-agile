@@ -1,0 +1,111 @@
+/* CSS Document */
+
+body{
+  font-family: Verdana, Arial, Helvetica, sans-serif;;
+  line-height: 1.5em;
+}
+
+#content{
+  background-color:#fffae8;
+}
+
+h1,h2,h3,h4{
+  font-family: Georgia;
+}
+
+.header{
+  background:url(./../images/header_gradient.gif) 0 0 repeat-x #f09325;
+}
+
+.header .logo{
+  height: 135px;
+  font-family: arial;
+}
+
+.header a, .header a:hover{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Top Nav */
+.topnav ul {
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  background-color: #202020;
+  padding: 1em;
+  border-top: 1px solid #fff;
+}
+.topnav ul li { display: inline; }
+.topnav ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: #fff;
+}
+.topnav ul li a:hover{
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+.drop_shadow{
+  background:url(./../images/drop_shadow.gif) 0 0 repeat-x #fffae8;; height: 16px;
+  margin: 0;
+  padding: 0 0 2em 0;
+}
+
+/* left */
+.left h2{
+  color: #202020;
+	background-color:inherit;
+	text-transform:uppercase;
+	margin:0 0 21px 0;
+}
+.left h2 span{
+  color:#F99023;
+  background-color:inherit;
+  display:block;
+}
+
+.left a{
+  font:bold;
+	color:#006882;
+	background-color:#FFFEFA;
+}
+.left a:hover{
+color:#1B7D01;
+background-color:#F7F0D9;
+text-decoration:none;
+}
+
+.left .text_content{ padding: 0 1em 2em 0;}
+.left .text_content span{color:#006882; background-color:#FFFEFA;}
+
+.left .highlight{
+  background:url(./../images/highlight_chat_bubble.gif) 0 0 no-repeat;
+  font-weight:bold;
+  font-size:1.5em;
+  display:block;
+  padding:0.5em 0 0 4em;
+  margin:0 0 0.5em 0;
+  color:#144848;
+  height:41px;
+/*  border-top: 1px dotted #000;
+  border-bottom: 1px dotted #000;*/
+}
+
+.right #contact_info{
+  margin: 4.5em 0 0 1em;
+  text-align:center;
+  font-family: Georgia;
+  font-size: 120%;
+  background-color:#F99023;
+  padding: 4em 0 4em 0;
+}
+
+/* footer */
+.footer{
+  text-align:center;
+  color: #fff;
+  background-color: #202020;
+  padding: 1em;
+  border-top: 1px solid #fff;
+}
