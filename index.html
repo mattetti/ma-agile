@@ -7,6 +7,16 @@
   <link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection">
   <link rel="stylesheet" href="css/compressed/print.css" type="text/css" media="print">    
   <!--[if IE]><link rel="stylesheet" href="css/lib/ie.css" type="text/css" media="screen, projection"><![endif]-->
+  <link rel="stylesheet" type="text/css" href="css/niftyCorners.css">
+  <link rel="stylesheet" type="text/css" href="javascripts/niftyPrint.css" media="print">
+  <script type="text/javascript" src="javascripts/nifty.js"></script>
+  <script type="text/javascript">
+  window.onload=function(){
+  if(!NiftyCheck())
+      return;
+  Rounded("div#r-info","#FFFAE8","#F99023");
+  }
+  </script>
 </head>
 <body>
 <!-- start header -->
@@ -23,7 +33,6 @@
       <li><a href="#who_are_we">Who are we?</a></li>
       <li><a href="#what_do_we_offer">What do we offer?</a></li>
       <li><a href="#what_do_we_value">What do we value?</a></li>
-      <li><a href="#how_do_we_do_it">How do we do it?</a></li>
       <li><a href="#">Contact Us</a></li>
     </ul>
   </div>
@@ -40,7 +49,7 @@
       <div class="text_content">
         <p><span>m|a agile consulting</span> was founded in 2005 by Matt Aimonetti & Heidi Vega. Since then, we have offered our services to companies <span>around the world</span>. Based in <span>San Diego, CA</span>, we work with other <span>great local developers and designers</span> to ensure our customers the best business value.</p>
 
-        <p><a href='http://workingwithrails.com/person/6065-matt-aimonetti'>Rails core contributor</a>, <a href='http://workingwithrails.com/person/6065-matt-aimonetti'>Hackfest winner</a>, author of multiple rails plugins and Ruby gems (<a href="http://code.google.com/p/globalite/">Globalite</a>, <a href="http://code.google.com/p/ar-backup/">ActiveRecord-backup</a>, <a href='http://googlecharts.rubyforge.org/'>GoogleCharts</a>, <a href="http://code.google.com/p/mimetype-fu/">mimeType-fu</a>... ), and contributor of many popular projects, <a href="http://workingwithrails.com/person/6065-matt-aimonetti">Matt</a> is also quite involved with the Ruby/Rails community.  If he's not working on his laptop, he's probably hanging out with the <a href="http://sdruby.com">SD.rb</a> guys.</p>
+        <p><a href='http://workingwithrails.com/person/6065-matt-aimonetti'>Rails core contributor</a>, <a href='http://workingwithrails.com/person/6065-matt-aimonetti'>Hackfest winner</a>, author of multiple rails plugins and Ruby gems (<a href="http://code.google.com/p/globalite/">Globalite</a>, <a href="http://code.google.com/p/ar-backup/">ActiveRecord-backup</a>, <a href='http://googlecharts.rubyforge.org/'>GoogleCharts</a>, <a href="http://code.google.com/p/mimetype-fu/">mimeType-fu</a>... ), and contributor of many popular projects. <a href="http://workingwithrails.com/person/6065-matt-aimonetti">Matt</a> is also quite involved with the Ruby/Rails community.  If he's not working on his laptop, he's probably hanging out with the <a href="http://sdruby.com">SD.rb</a> guys.</p>
       </div>
 
       <h2 id="what_do_we_offer"><span>What</span>do we offer?</h2>
@@ -78,12 +87,15 @@
         <p>Because we know too well that <a href="http://en.wikipedia.org/wiki/Feature_creep">feature-creeping</a> is a reality, we want to help you keep things simple.  We believe in powerful yet simple solutions.  The guys at <a href='http://37signals.com'>37signals</a> have written a nice <a href="http://gettingreal.37signals.com/">book (available online)</a> covering this concept at length.</p>
       </div>
     </div>
-    <!-- end of left column - start of right column -->
+    
     <div class="column span-8 right last">
-            <p id="contact_info">
-              you can contact m|a agile consulting<br/>
-            via email:<a href="mailto:info@ma-agileconsulting.com">info@ma-agileconsulting.com</a><br/>
-            via phone: +1 (760) 536-4425</p>
+        <div id="r-info">
+          <div class="padded">
+                you can contact m|a agile consulting<br/>
+              via email:<a href="mailto:info@ma-agileconsulting.com">info@ma-agileconsulting.com</a><br/>
+              via phone: +1 (760) 536-4425
+          </div>
+        </div>
     </div>  
   </div>
   <!-- end container -->
